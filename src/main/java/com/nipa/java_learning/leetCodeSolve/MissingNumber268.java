@@ -4,7 +4,6 @@ import java.util.Arrays;
 
 public class MissingNumber268 {
     public static void main(String[] args) {
-/*
       int[] arr ={3, 0, 1,4};
         Arrays.sort(arr);
         for(int i=0;i<arr.length-1;i++)
@@ -15,8 +14,7 @@ public class MissingNumber268 {
                 break;
             }
         }
-*/
-        int[] nums = {3, 0, 2, 1, 4, 5, 7};
+        /*int[] nums = {3, 0, 2, 1, 4, 5, 7};
 
         int n = nums.length;
         int sum = n * (n + 1) / 2;
@@ -27,6 +25,6 @@ public class MissingNumber268 {
         }
         //System.out.println(count);
         int result = sum - count;
-        System.out.println(result);
+        System.out.println(result);*/
     }
 }

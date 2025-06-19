@@ -3,15 +3,21 @@ package com.nipa.java_learning.leetCodeSolve;
 public class RemoveDuplicate26 {
     public static void main(String[] args) {
         int[] nums = {0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
-        int k = 1;
-        int[] nums2 = new int[nums.length];
+        int count = 0;
 
-        for (int i = 1; i < nums.length; i++) {
-            if (nums[i] != nums[i - 1]) {
-                nums2[k] = nums[i];
-                k++;
+        for (int i = 0; i < nums.length; i++) {
+            if (i < nums.length - 1 && nums[i] == nums[i + 1]) {
+                continue;
+            }
+            else {
+                nums[count] = nums[i];
+                count++;
             }
         }
-        System.out.println("output: " + k);
+        System.out.println(count);
+
+        for (int i = 0; i < count; i++) {
+            System.out.print(nums[i] + " ");
+        }
     }
 }
