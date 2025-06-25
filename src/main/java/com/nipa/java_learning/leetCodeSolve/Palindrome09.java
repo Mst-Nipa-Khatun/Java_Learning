@@ -10,6 +10,7 @@ public class Palindrome09 {
             sum=sum*10+r;
             temp /= 10;
         }
+
         if(sum==x){
             System.out.println("true");
         }
